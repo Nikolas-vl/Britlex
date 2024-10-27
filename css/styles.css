@@ -1,0 +1,136 @@
+/*----------------------------------------------------------------------------------
+RESET
+--------------------------------------------------------------------------------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #8f95a5;
+  background-color: #fff;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/*----------------------------------------------------------------------------------
+UTILS
+--------------------------------------------------------------------------------------- */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*----------------------------------------------------------------------------------
+COMMON
+--------------------------------------------------------------------------------------- */
+
+.container {
+  margin: 0 auto;
+  max-width: 1378px;
+  padding: 0 20px;
+}
+
+/*----------------------------------------------------------------------------------
+HEADER
+--------------------------------------------------------------------------------------- */
+.page-header {
+  padding: 55px 0;
+}
+.header-cnt {
+  display: flex;
+}
+.header-nav {
+  display: flex;
+  gap: 236px;
+  align-items: center;
+}
+.header-logo {
+  font-size: 36px;
+  color: #000;
+  padding: 8px 0;
+}
+.logo-accent {
+  color: #939393;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header-link {
+  font-weight: 500;
+  font-size: 20px;
+  color: #263238;
+  display: block;
+  padding: 20px 0;
+  transition: transform 250ms linear;
+}
+
+.header-link:hover,
+.header-link:focus {
+  transform: scale(1.1);
+}
+
+.header-button {
+  margin-left: auto;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #000;
+  border: 2px solid #263238;
+  border-radius: 10px;
+  min-width: 312px;
+  height: 70px;
+  padding: 20px 56px;
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background-color: #263238;
+  color: #fff;
+}
+
+/*----------------------------------------------------------------------------------
+HERO
+--------------------------------------------------------------------------------------- */
