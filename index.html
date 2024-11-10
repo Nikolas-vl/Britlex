@@ -16,7 +16,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Britlex</title>
   </head>
@@ -36,8 +35,160 @@
           </ul>
         </nav>
         <button class="header-button" type="submit">Let's Talk</button>
+        <button type="button" data-menu-open>
+          <svg class="burder-btn" width="34" height="19">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu" data-menu>
+        <button type="button" class="menu-close-btn" data-menu-close>
+          <svg class="menu-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="menu-list">
+          <li><a class="menu-link" href="">Home</a></li>
+          <li><a class="menu-link" href="">Skills</a></li>
+          <li><a class="menu-link" href="">About Us</a></li>
+          <li><a class="menu-link" href="">Pricing</a></li>
+          <li><a class="menu-link" href="">Contacts</a></li>
+        </ul>
       </div>
     </header>
-    <main></main>
+    <main>
+      <section class="hero container">
+        <picture class="hero-img">
+          <source
+            srcset="
+              ./images/hero/learning-languages-bro5.png    1x,
+              ./images/hero/learning-languages-bro5-2x.png 2x
+            "
+            media="(min-width: 1378px)"
+          />
+          <source
+            srcset="
+              ./images/hero/learning-languages-bro4.png    1x,
+              ./images/hero/learning-languages-bro4-2x.png 2x
+            "
+            media="(min-width: 960px)"
+          />
+          <source
+            srcset="
+              ./images/hero/learning-languages-bro3.png    1x,
+              ./images/hero/learning-languages-bro3-2x.png 2x
+            "
+            media="(min-width: 720px)"
+          />
+          <source
+            srcset="
+              ./images/hero/learning-languages-bro2.png    1x,
+              ./images/hero/learning-languages-bro2-2x.png 2x
+            "
+            media="(min-width: 540px)"
+          />
+          <source
+            srcset="
+              ./images/hero/learning-languages-bro1.png    1x,
+              ./images/hero/learning-languages-bro1-2x.png 2x
+            "
+            media="(max-width: 539px)"
+          />
+          <img
+            class="hero-img"
+            src="./images/hero/learning-languages-bro5.png"
+            alt="Learning languages"
+            width="654"
+            height="510"
+          />
+        </picture>
+        <div class="hero-row">
+          <h1 class="hero-title">
+            Learn <span class="hero-break">Any </span>Foreign Language
+          </h1>
+          <svg class="hero-icon" width="72" height="72">
+            <use href="./images/icons.svg#bulb-icon"></use>
+          </svg>
+          <p class="hero-text">
+            With our teachers who write a program for each student, you will be
+            able to make your first sketch after the first lesson.
+          </p>
+          <button class="hero-btn btn" type="button">Get started</button>
+        </div>
+      </section>
+      <section class="skills container">
+        <h2 class="skills-title tagline">Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-item">
+            <img
+              class="skills-img"
+              src="./images/Skills/speaking-min.png"
+              alt=""
+            />
+            <div class="skills-text">
+              <h3 class="skills-capture">Speaking</h3>
+              <p class="skills-desc">
+                <span class="skills-br">
+                  Improve your English skills and confidence. Live classes and
+                  interactive lessons online. 20% extra free for a limited time
+                  only
+                </span>
+                Learn English online and improve your skills through our
+                high-quality courses and resources - all designed for adult
+                language learners.
+              </p>
+              <button class="skills-btn btn" type="button">Learn more</button>
+            </div>
+          </li>
+          <li class="skills-item">
+            <img
+              class="skills-img"
+              src="./images/Skills/writing-min.png"
+              alt=""
+            />
+            <div class="skills-text">
+              <h3 class="skills-capture">Writing</h3>
+              <p class="skills-desc">
+                One of the most important and extensive areas of natural
+                science, the science that studies substances, also their
+                composition
+              </p>
+              <button class="skills-btn btn" type="button">Learn more</button>
+            </div>
+          </li>
+          <li class="skills-item">
+            <img
+              class="skills-img"
+              src="./images/Skills/reading-min.png"
+              alt=""
+            />
+            <div class="skills-text">
+              <h3 class="skills-capture">Reading</h3>
+              <p class="skills-desc">
+                perception and response actions of the user resulting from the
+                use and or up coming use of the product, system or service
+              </p>
+              <button class="skills-btn btn" type="button">Learn more</button>
+            </div>
+          </li>
+          <li class="skills-item">
+            <img
+              class="skills-img"
+              src="./images/Skills/listening-min.png"
+              alt=""
+            />
+            <div class="skills-text">
+              <h3 class="skills-capture">Listening</h3>
+              <p class="skills-desc">
+                Here you can find activities to practise your listening skills.
+                Listening will help you to improve your understanding
+              </p>
+              <button class="skills-btn btn" type="button">Learn more</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
